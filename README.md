@@ -1,9 +1,7 @@
-# KopSoftTool
+# KopSoftTool http://www.kopsoft.cn/
 
 #### 介绍
 KopSoftTool:二维码标签打印程序,C#串口通信SerialPort,SCADA监控与数据采集 西门子PLC OPC,等
-
-作者网站 http://www.kopsoft.cn/
 
 #### 软件架构
 
