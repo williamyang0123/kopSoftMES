@@ -1,5 +1,11 @@
 # KopSoftTool http://www.kopsoft.cn/
 
+## 仓库地址
+
+* Github：https://github.com/williamyang1984/KopSoftTool
+
+* Gitee: https://gitee.com/william_yang/KopSoftTool
+
 #### 介绍
 KopSoftTool:二维码标签打印程序,C#串口通信SerialPort,SCADA监控与数据采集 西门子PLC OPC,等
 
