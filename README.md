@@ -1,4 +1,7 @@
-# KopSoftTool http://www.kopsoft.cn/
+#
+
+KopSoftTool:二维码标签打印程序,C#串口通信SerialPort,等
+http://www.kopsoft.cn/
 
 ## 仓库地址
 
