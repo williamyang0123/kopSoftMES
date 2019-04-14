@@ -13,7 +13,7 @@ namespace KopSoftPrint
 {
     public partial class KopSoftPrint : Form
     {
-        private List<ProductEntity> Product_Entity { get; set; }
+        //private List<ProductEntity> Product_Entity { get; set; }
         private PrintDocument pd = new PrintDocument();
 
         private int rowIndex;
@@ -33,38 +33,6 @@ namespace KopSoftPrint
             }
         }
 
-        public void Print(int Number)
-        {
-            pd.DefaultPageSettings.PaperSize = new PaperSize("", 999, 999); //设置纸张大小
-            StandardPrintController controler = new StandardPrintController();
-
-            if (dataGridView1.CurrentCell != null)
-            {
-                for (int j = 0; j < dataGridView1.SelectedRows.Count; j++) //遍历所有选中的行
-                {
-                    rowIndex = dataGridView1.SelectedRows[j].Index;
-                    try
-                    {
-                        pd.PrintPage += new PrintPageEventHandler(pd_PrintPage);
-                        pd.PrintController = controler;
-                        for (int i = 0; i < Number; i++)
-                        {
-                            pd.Print();
-                        }
-                    }
-                    catch (Exception e)
-                    {
-                        Console.WriteLine(e.Message);
-                        return;
-                    }
-                    finally
-                    {
-                        pd.Dispose();
-                    }
-                }
-            }
-        }
-
         public void pd_PrintPage(Object Sender, PrintPageEventArgs e)
         {
             Graphics g = e.Graphics;
@@ -81,22 +49,22 @@ namespace KopSoftPrint
 
             string QRCode = string.Format("{0}_{1}_{2}_1_1", dataGridView1.Rows[rowIndex].Cells[2].Value.ToString(), dataGridView1.Rows[rowIndex].Cells[3].Value.ToString(), dataGridView1.Rows[rowIndex].Cells[8].Value.ToString());
 
-            //Pen pen = new Pen(Color.Black, 1);
+            Pen pen = new Pen(Color.Black, 1);
 
-            //g.DrawLine(pen, 5, 5, 270, 5);
-            //g.DrawLine(pen, 5, 30, 270, 30);
-            //g.DrawLine(pen, 5, 50, 270, 50);
-            //g.DrawLine(pen, 5, 70, 270, 70);
+            g.DrawLine(pen, 5, 5, 270, 5);
+            g.DrawLine(pen, 5, 30, 270, 30);
+            g.DrawLine(pen, 5, 50, 270, 50);
+            g.DrawLine(pen, 5, 70, 270, 70);
 
-            //g.DrawLine(pen, 110, 90, 270, 90);
-            //g.DrawLine(pen, 110, 110, 270, 110);
-            //g.DrawLine(pen, 110, 130, 270, 130);
-            //g.DrawLine(pen, 110, 150, 270, 150);
-            //g.DrawLine(pen, 5, 170, 270, 170);
+            g.DrawLine(pen, 110, 90, 270, 90);
+            g.DrawLine(pen, 110, 110, 270, 110);
+            g.DrawLine(pen, 110, 130, 270, 130);
+            g.DrawLine(pen, 110, 150, 270, 150);
+            g.DrawLine(pen, 5, 170, 270, 170);
 
-            //g.DrawLine(pen, 5, 5, 5, 170);
-            //g.DrawLine(pen, 110, 70, 110, 170);
-            //g.DrawLine(pen, 270, 5, 270, 170);
+            g.DrawLine(pen, 5, 5, 5, 170);
+            g.DrawLine(pen, 110, 70, 110, 170);
+            g.DrawLine(pen, 270, 5, 270, 170);
 
             g.DrawString(ProductName, new Font("黑体", 7), brush, 10, 15);
             g.DrawString(ProductCode, new Font("黑体", 7), brush, 10, 35);
@@ -118,10 +86,43 @@ namespace KopSoftPrint
             e.HasMorePages = false;
         }
 
+        /// <summary>
+        /// 打印
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnPrint_Click(object sender, EventArgs e)
         {
             int Number = Convert.ToInt32(numericUpDown1.Value);
-            Print(Number);
+
+            pd.DefaultPageSettings.PaperSize = new PaperSize("", 999, 999); //设置纸张大小
+            StandardPrintController controler = new StandardPrintController();
+
+            if (dataGridView1.CurrentCell != null)
+            {
+                for (int j = 0; j < dataGridView1.SelectedRows.Count; j++) //遍历所有选中的行
+                {
+                    rowIndex = dataGridView1.SelectedRows[j].Index;
+                    try
+                    {
+                        pd.PrintPage += new PrintPageEventHandler(pd_PrintPage);
+                        pd.PrintController = controler;
+                        for (int i = 0; i < Number; i++)
+                        {
+                            pd.Print();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                        return;
+                    }
+                    finally
+                    {
+                        pd.Dispose();
+                    }
+                }
+            }
         }
 
         /// <summary>

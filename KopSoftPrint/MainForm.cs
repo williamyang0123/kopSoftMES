@@ -154,6 +154,19 @@ namespace KopSoftPrint
         private void MainForm_Load(object sender, EventArgs e)
         {
             toolStripStatusLabel1.Text = "Copyright © 2018-" + DateTime.Now.Year;
+
+            if ((kopSoftPrint == null) || (kopSoftPrint.IsDisposed)) //如果没有打开过
+            {
+                kopSoftPrint = new KopSoftPrint();
+                kopSoftPrint.MdiParent = this;
+                kopSoftPrint.WindowState = FormWindowState.Maximized;
+                kopSoftPrint.Show();
+            }
+            else
+            {
+                kopSoftPrint.WindowState = FormWindowState.Maximized;
+                kopSoftPrint.Activate(); //如果已经打开过就让其获得焦点
+            }
         }
     }
 }
