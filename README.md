@@ -4,13 +4,11 @@
 
 * 官方网址 http://kopsoft.cn/
 
-* 博客园 https://www.cnblogs.com/williamyoung/
-
 ## 仓库地址
 
-* Github：https://github.com/williamyang1984/KopSoftTool
+* Github https://github.com/williamyang1984/KopSoftTool
 
-* Gitee: https://gitee.com/william_yang/KopSoftTool
+* Gitee https://gitee.com/william_yang/KopSoftTool
 
 ## 软件架构
 
