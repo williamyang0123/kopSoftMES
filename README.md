@@ -43,14 +43,14 @@ BitMatrix表示按位表示的二维矩阵数组，元素的值用true和false�
 * 6.“读取配置”用于直接读取之前设计好的模板打印样式，文件保存在程序根目录中，默认模板为KopSoft.KopSoftPrint.PrintConfig.xml
 
 
-C#串口通信SerialPort
+## C#串口通信SerialPort
 串口按电气标准及协议来划分，包括RS-232-C、RS-422、RS485
 RXD 接收数据 Receive Data
 TXD 发送数据 Transmit Data
 SGND 信号接地 Signal Ground
 
 
-SCADA监控与数据采集
+## SCADA监控与数据采集
 西门子PLC OPC
 C#通过OPC Server自定义接口实现客户端数据读写
 在客户端开发时，要使用OpcServer对象来实现客户端与Opc服务器之间的连接。一个OpcServer对象下有多个OpcGroup，一个OpcGroup下有多个OpcItem，
