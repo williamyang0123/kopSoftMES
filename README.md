@@ -18,7 +18,7 @@ Microsoft .NET Framework 4.5
 
 ZXing.Net
 
-## 使用说明
+## 条形码二维码标签编辑打印软件
 
 C#打印
 1.建立PrintDocument对象
