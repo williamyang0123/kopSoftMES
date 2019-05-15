@@ -1,9 +1,11 @@
 ﻿#
 
-KopSoftTool 条形码二维码标签编辑打印软件
-,C#串口通信SerialPort
+KopSoftTool 条形码二维码标签编辑打印软件,C#串口通信SerialPort
+
 官方网址 http://kopsoft.cn/
+
 博客园 https://www.cnblogs.com/williamyoung/
+
 技术QQ群1:421635,技术QQ群2:719060018
 
 ## 仓库地址
