@@ -18,6 +18,7 @@ KopSoftTool 条形码二维码标签编辑打印软件,C#串口通信SerialPort
 #### 软件架构
 
 Microsoft .NET Framework 4.5
+
 ZXing.Net
 
 
