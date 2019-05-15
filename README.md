@@ -1,14 +1,9 @@
 ﻿##
 
 * KopSoftTool 条形码二维码标签编辑打印软件,C#串口通信SerialPort
-
-* 官方网址 http://kopsoft.cn/
-
-## 仓库地址
-
-* Github https://github.com/williamyang1984/KopSoftTool
-
-* Gitee https://gitee.com/william_yang/KopSoftTool
+* 官网 http://kopsoft.cn/
+* github源码 https://github.com/williamyang1984/KopSoftTool
+* gitee源码 https://gitee.com/william_yang/KopSoftTool
 
 ## 软件架构
 
