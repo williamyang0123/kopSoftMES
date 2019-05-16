@@ -380,11 +380,6 @@ namespace KopSoft.KopSoftPrint
             //e.Graphics.DrawString(ProductName, new Font("黑体", 7), brush, 10, 15);
 
             e.Graphics.DrawString("试用版", new Font("黑体", 5), brush, 5, 5);
-
-
-
-
-            //pictureBox1.Image = m_printImg;
         }
 
         private void KopSoftPrint_Load(object sender, EventArgs e)
