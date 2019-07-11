@@ -1,9 +1,8 @@
 ****
 
-* KopSoftTool 条形码二维码标签编辑打印软件,C#串口通信SerialPort
-* 官网 http://kopsoft.cn/
-* github源码 https://github.com/williamyang1984/KopSoftTool
-* gitee源码 https://gitee.com/william_yang/KopSoftTool
+* KopSoftPrint条形码二维码标签编辑打印软件 http://www.kopsoft.cn/
+* github源码 https://github.com/williamyang1984/KopSoftPrint
+* gitee源码 https://gitee.com/william_yang/KopSoftPrint
 
 ****
 
@@ -13,7 +12,7 @@ Microsoft .NET Framework 4.5
 
 ZXing.Net
 
-## 条形码二维码标签编辑打印软件
+## KopSoftPrint条形码二维码标签编辑打印软件
 
 C#打印
 1.建立PrintDocument对象
@@ -37,17 +36,3 @@ BitMatrix表示按位表示的二维矩阵数组，元素的值用true和false�
 * 5.保存配置后可以“打印预览”，也可以直接“打印”
 * 6.“读取配置”用于直接读取之前设计好的模板打印样式，文件保存在程序根目录中，默认模板为KopSoft.KopSoftPrint.PrintConfig.xml
 
-
-## C#串口通信SerialPort
-串口按电气标准及协议来划分，包括RS-232-C、RS-422、RS485
-RXD 接收数据 Receive Data
-TXD 发送数据 Transmit Data
-SGND 信号接地 Signal Ground
-
-
-## SCADA监控与数据采集
-西门子PLC OPC
-C#通过OPC Server自定义接口实现客户端数据读写
-在客户端开发时，要使用OpcServer对象来实现客户端与Opc服务器之间的连接。一个OpcServer对象下有多个OpcGroup，一个OpcGroup下有多个OpcItem，
-在自定义接口下的Client开发，是以Group为单位的操作，数据读写都是通过OpcGroup进行的。
-引用OpcRcw.Comn.dll OpcRcw.Da.dll
