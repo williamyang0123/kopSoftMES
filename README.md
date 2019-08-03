@@ -1,10 +1,17 @@
 ****
-
+* KopSoftWms仓库管理系统
+* 官网 http://mes.kopsoft.cn/Desktop/
+* Demo http://wms.kopsoft.cn/
+* GitHub https://github.com/lysilver/KopSoftWms
+* 码云 https://gitee.com/yulou/KopSoftWms
+****
 * KopSoftPrint条形码二维码标签编辑打印软件 
 * 官网 http://mes.kopsoft.cn/Desktop/
-* github源码 https://github.com/williamyang1984/KopSoftPrint
-* gitee源码 https://gitee.com/william_yang/KopSoftPrint
-
+* GitHub https://github.com/williamyang1984/KopSoftPrint
+* 码云 https://gitee.com/william_yang/KopSoftPrint
+****
+* KopSoftMes制造执行系统
+* Demo http://mes.kopsoft.cn/
 ****
 
 ## 软件架构
