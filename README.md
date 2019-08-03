@@ -1,6 +1,6 @@
 ****
 
-* KopSoftPrint条形码二维码标签编辑打印软件 http://www.kopsoft.cn/
+* KopSoftPrint条形码二维码标签编辑打印软件 http://mes.kopsoft.cn/Desktop/
 * github源码 https://github.com/williamyang1984/KopSoftPrint
 * gitee源码 https://gitee.com/william_yang/KopSoftPrint
 
