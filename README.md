@@ -1,11 +1,13 @@
 ****
-* KopSoft条形码二维码标签打印软件 http://kopsoft.cn/KopSoftPrint/
+* KopSoft标签打印软件 http://kopsoft.cn/KopSoftPrint/
 * GitHub https://github.com/williamyang1984/KopSoftPrint
 * 码云 https://gitee.com/williamyang1984/KopSoftPrint
-****
+*
 * KopSoft仓库管理系统 http://wms.kopsoft.cn/
 * GitHub https://github.com/lysilver/KopSoftWms
 * 码云 https://gitee.com/yulou/KopSoftWms
+*
+* 技术QQ群:421635
 ****
 
 ## 软件架构
