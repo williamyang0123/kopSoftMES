@@ -1,5 +1,5 @@
 ****
-* KopSoft标签打印软件 http://kopsoft.cn/KopSoftPrint/
+* KopSoft标签打印软件 http://tuoshui.net.cn/Print/
 * GitHub https://github.com/williamyang1984/KopSoftPrint
 * 码云 https://gitee.com/williamyang1984/KopSoftPrint
 *
