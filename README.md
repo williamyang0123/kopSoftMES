@@ -11,9 +11,8 @@
 * 码云 https://gitee.com/yulou/KopSoftMES
 * GitHub https://github.com/lysilver/KopSoftMES
 *
-* 工业信息化自动化.技术论坛 www.KopSoft.cn
-* 开源WMS仓库管理系统 QQ群:421635
-* 开源MES制造执行系统 QQ群:1048397413
+* 工业信息化自动化.技术论坛 http://www.KopSoft.cn
+* KopSoft开源免费WMS/MES QQ群:421635
 ****
 
 ## 软件架构
