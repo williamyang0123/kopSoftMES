@@ -15,7 +15,7 @@
 *
 * KopSoft数据采集与监控
 * 码云 https://gitee.com/william1984/KopSoftSCADA
-*
+* GitHub https://github.com/1984william/KopSoftSCADA
 *
 * KopSoft开源免费WMS/MES QQ群:421635
 ****
