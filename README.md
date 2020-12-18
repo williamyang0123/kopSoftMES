@@ -19,13 +19,13 @@
 * 技术QQ群:421635 商务合作:13921987606
 ****
 
-## 软件架构
+## 技术
 
 Microsoft .NET Framework 4.5
 
 ZXing.Net
 
-## KopSoftPrint二维码标签打印软件
+## KopSoft标签(条码)打印软件
 
 C#打印
 1.建立PrintDocument对象
