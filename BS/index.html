@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="标签打印软件,WMS仓库管理系统,MES制造执行系统,SCADA数据采集与监控,电子看板,Andon安灯系统">
+	<meta name="description" content="工业化信息化自动化解决方案 拓水科技">
+	<title>开源免费标签(条码)打印软件,张家港工业软件开发</title>
+</head>
+
+<body>
+	<p></p>
+	<button onclick="send()">WebSocket send</button>
+	<p></p>
+
+	<div class="col-sm-10">
+		二维码内容<input class="form-control" id="content" value="KopSoft张家港" type="text">
+	</div>
+	<div class="col-sm-10">
+		二维码宽度<input class="form-control" id="h" value="150" type="text">
+	</div>
+	<div class="col-sm-10">
+		二维码高度<input class="form-control" id="w" value="150" type="text">
+	</div>
+	<p></p>
+	<div class="col-sm-10">
+		<input onclick="gen()" class="btn btn-primary radius" type="submit" value="生成二维码">
+	</div>
+
+	<p></p>
+	<div id="qrcode"></div>
+	<p></p>
+
+	<script>
+		function gen() {
+			$('#qrcode').html("");
+			var qrcode = new QRCode(document.getElementById("qrcode"), {
+				text: $("#content").val(),
+				width: $("#h").val(),
+				height: $("#w").val(),
+				colorDark: "#000000",
+				colorLight: "#ffffff",
+				correctLevel: QRCode.CorrectLevel.H
+			});
+
+		}
+	</script>
+
+	<script>
+		var ws = new WebSocket("ws://127.0.0.1:7099");
+		ws.onopen = function (evt) {
+			console.log("Connection open ...");
+			ws.send("Hello WebSockets!");
+		};
+		ws.onmessage = function (event) {
+			if (typeof event.data === String) {
+				console.log("Received data string");
+			}
+			if (event.data instanceof ArrayBuffer) {
+				var buffer = event.data;
+				console.log("Received arraybuffer");
+			}
+			console.log("Received Message: " + event.data);
+		};
+		ws.onclose = function (evt) {
+			console.log("Connection closed.");
+		};
+		function send() {
+			var data = {
+				template: "模板名称",
+				name: "12",
+				count: "1212"
+			}
+			ws.send(JSON.stringify(data))
+		}
+	</script>
+
+	<script src="js/jquery/3.0/jquery.min.js"></script>
+	<script src="js/qrcode.min.js"></script>
+	<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?3a070b89d0e6be91baa9c35c1190d7b0";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+
+	<p class="copyright">
+		&copy;2020 <a href="http://kopsoft.cn/" target="_blank">KopSoft</a> 技术支持:13921987606 公司地址:苏州市张家港市凤凰科技创业园C幢
+	</p>
+
+</body>
+
+</html>
