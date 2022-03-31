@@ -11,6 +11,9 @@
 * GitHub https://github.com/lysilver/KopSoftMES
 *
 * 免费标签(条码)打印软件 http://mom.kopsoft.cn/label/
+* Gitee https://gitee.com/williamyang3/KopSoftLabel
+* GitHub https://github.com/williamyang3/KopSoftLabel
+*
 * SCADA数据采集与监控,电子看板 http://kanban.kopsoft.cn/
 ****
 
